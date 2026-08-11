@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capson Key Tech | Mobile Locksmith — Eastern Idaho</title>
+<meta name="description" content="Professional mobile locksmith services across Eastern Idaho. Automotive, residential, and commercial — 24/7 availability, honest pricing, we come to you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-logo"><i class="ti ti-key"></i> Capson Key Tech</a>
+    <nav class="site-nav">
+      <ul class="site-nav-links">
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/automotive/">Automotive</a></li>
+        <li><a href="/residential/">Residential</a></li>
+        <li><a href="/commercial/">Commercial</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="tel:2084197412" class="site-nav-cta"><i class="ti ti-phone"></i> (208) 419-7412</a>
+    </nav>
+    <button class="site-menu-btn" aria-label="Open menu" aria-expanded="false"><i class="ti ti-menu-2"></i></button>
+  </div>
+  <div class="site-mobile-drawer">
+    <a href="/">Home</a>
+    <a href="/automotive/">Automotive</a>
+    <a href="/residential/">Residential</a>
+    <a href="/commercial/">Commercial</a>
+    <a href="/contact/">Contact</a>
+    <a href="tel:2084197412" class="site-nav-cta"><i class="ti ti-phone"></i> Call (208) 419-7412</a>
+  </div>
+</header>
+
+<style>
+  .ck * { box-sizing: border-box; margin: 0; padding: 0; }
+  .ck {
+    font-family: 'DM Sans', sans-serif;
+    color: #1a1b2e;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  /* HERO BANNER */
+  .ck-hero {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1a3a6e 100%);
+    border-radius: 16px;
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .ck-hero p.sub {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7ab3f0;
+    margin-bottom: 0.75rem;
+  }
+  .ck-hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 6vw, 56px);
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .ck-hero p.body {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.75;
+    max-width: 520px;
+    margin: 0 auto 2rem;
+  }
+  .ck-hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .ck-btn-blue {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: 10px;
+    background: #2563c0;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+  .ck-btn-blue:hover { background: #1a4fa0; }
+  .ck-btn-outline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.25);
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  /* SERVICES */
+  .ck-section-label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2563c0;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+  .ck-section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    color: #0d1b2a;
+    margin-bottom: 1.25rem;
+  }
+  .ck-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 650px) { .ck-cards { grid-template-columns: 1fr; } }
+  .ck-card {
+    background: #fff;
+    border: 1px solid rgba(26,79,160,0.13);
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: box-shadow 0.2s, transform 0.18s;
+  }
+  .ck-card:hover { box-shadow: 0 6px 24px rgba(26,79,160,0.1); transform: translateY(-2px); }
+  .ck-card-icon {
+    width: 46px; height: 46px;
+    border-radius: 11px;
+    background: #e8f0fb;
+    color: #1a4fa0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .ck-card h3 { font-size: 17px; font-weight: 500; margin-bottom: 0.45rem; color: #0d1b2a; }
+  .ck-card p { font-size: 13px; color: #5a6a7a; line-height: 1.65; margin-bottom: 1rem; }
+  .ck-card-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2563c0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+  }
+
+  /* WHY US */
+  .ck-why {
+    background: #f0f4f8;
+    border-radius: 14px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .ck-why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 1.1rem;
+  }
+  @media (max-width: 500px) { .ck-why-grid { grid-template-columns: 1fr; } }
+  .ck-why-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .ck-why-item i {
+    font-size: 22px;
+    color: #2563c0;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .ck-why-item h4 { font-size: 14px; font-weight: 500; margin-bottom: 3px; color: #0d1b2a; }
+  .ck-why-item p { font-size: 13px; color: #5a6a7a; line-height: 1.55; }
+
+  /* CTA STRIP */
+  .ck-cta {
+    background: linear-gradient(135deg, #0d1b2a, #1a3a6e);
+    border-radius: 14px;
+    padding: 2.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .ck-cta h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+  }
+  .ck-cta p { font-size: 13px; color: rgba(255,255,255,0.45); }
+  .ck-cta-btns { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+  .ck-cta-phone {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 24px;
+    border-radius: 10px;
+    background: #2563c0;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+  .ck-cta-phone:hover { background: #1a4fa0; }
+  .ck-cta-email {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 24px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.22);
+    text-decoration: none;
+    display: inline-block;
+  }
+</style>
+
+<div class="ck">
+
+  <!-- HERO -->
+  <div class="ck-hero">
+    <p class="sub">Eastern Idaho's Key &amp; Lock Experts</p>
+    <h1>Professional Locksmith<br>Services You Can Trust</h1>
+    <p class="body">Automotive, commercial, and residential locksmith services across Eastern Idaho. We come to you, get it done on-site, and stand behind every job.</p>
+    <div class="ck-hero-btns">
+      <a href="tel:2084197412" class="ck-btn-blue"><i class="ti ti-phone"></i> Call Now — 24/7</a>
+      <a href="mailto:creed@capsonkeytech.com" class="ck-btn-outline">Email Us</a>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <p class="ck-section-label">Our services</p>
+  <p class="ck-section-title">What we do</p>
+  <div class="ck-cards">
+    <a href="/automotive/" class="ck-card">
+      <div class="ck-card-icon"><i class="ti ti-car"></i></div>
+      <h3>Automotive</h3>
+      <p>Key replacement, transponder programming, ignition repair, and lockouts for most makes and models.</p>
+      <span class="ck-card-link">View services <i class="ti ti-arrow-right"></i></span>
+    </a>
+    <a href="/commercial/" class="ck-card">
+      <div class="ck-card-icon"><i class="ti ti-building"></i></div>
+      <h3>Commercial</h3>
+      <p>Master key systems, rekeying, high-security locks, and emergency lockouts for businesses.</p>
+      <span class="ck-card-link">View services <i class="ti ti-arrow-right"></i></span>
+    </a>
+    <a href="/residential/" class="ck-card">
+      <div class="ck-card-icon"><i class="ti ti-home"></i></div>
+      <h3>Residential</h3>
+      <p>Home lockouts, deadbolt installation, rekeying, and smart lock setup for homeowners.</p>
+      <span class="ck-card-link">View services <i class="ti ti-arrow-right"></i></span>
+    </a>
+  </div>
+
+  <!-- WHY US -->
+  <div class="ck-why">
+    <p class="ck-section-label" style="margin-bottom:0.25rem;">Why choose us</p>
+    <p class="ck-section-title" style="margin-bottom:0;">Why Capson Key Tech</p>
+    <div class="ck-why-grid">
+      <div class="ck-why-item">
+        <i class="ti ti-map-pin"></i>
+        <div>
+          <h4>We come to you</h4>
+          <p>Fully mobile — no shop visit needed, anywhere in Eastern Idaho.</p>
+        </div>
+      </div>
+      <div class="ck-why-item">
+        <i class="ti ti-clock-24"></i>
+        <div>
+          <h4>24/7 availability</h4>
+          <p>Emergencies don't keep business hours. Neither do we.</p>
+        </div>
+      </div>
+      <div class="ck-why-item">
+        <i class="ti ti-currency-dollar"></i>
+        <div>
+          <h4>Honest pricing</h4>
+          <p>Upfront quotes with no hidden fees before any work begins.</p>
+        </div>
+      </div>
+      <div class="ck-why-item">
+        <i class="ti ti-star"></i>
+        <div>
+          <h4>Word-of-mouth reputation</h4>
+          <p>Built on real results and honest service since day one.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="ck-cta">
+    <div>
+      <h3>Ready to help — anytime</h3>
+      <p>Call, text, or email for a free quote. No obligation.</p>
+    </div>
+    <div class="ck-cta-btns">
+      <a href="mailto:creed@capsonkeytech.com" class="ck-cta-email">Email us</a>
+      <a href="tel:2084197412" class="ck-cta-phone">(208) 419-7412</a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <div class="site-footer-brand"><i class="ti ti-key"></i> Capson Key Tech</div>
+      <p class="tag">Mobile automotive, residential, and commercial locksmith services across Eastern Idaho. Licensed, insured, and available 24/7.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul class="site-footer-links">
+        <li><a href="/automotive/">Automotive</a></li>
+        <li><a href="/residential/">Residential</a></li>
+        <li><a href="/commercial/">Commercial</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="site-footer-links">
+        <li><a href="tel:2084197412"><i class="ti ti-phone"></i> (208) 419-7412</a></li>
+        <li><a href="mailto:creed@capsonkeytech.com"><i class="ti ti-mail"></i> creed@capsonkeytech.com</a></li>
+        <li><a href="/contact/"><i class="ti ti-send"></i> Get a quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-footer-bottom">&copy; <span id="ck-year">2026</span> Capson Key Tech. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('ck-year').textContent = new Date().getFullYear();</script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

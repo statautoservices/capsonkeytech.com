@@ -1,0 +1,229 @@
+/* =============================================
+   CAPSON KEY TECH — SHARED SITE CHROME
+   Header, nav, mobile menu, footer
+   ============================================= */
+
+:root {
+  --navy-dark: #0d1b2a;
+  --navy: #1a3a6e;
+  --blue: #2563c0;
+  --blue-dark: #1a4fa0;
+  --ink: #1a1b2e;
+  --muted: #5a6a7a;
+  --bg-soft: #f0f4f8;
+  --bg-chip: #e8f0fb;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+a { color: inherit; }
+
+/* ============ SITE HEADER ============ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(26, 79, 160, 0.1);
+}
+
+.site-header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  color: var(--navy-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-logo i {
+  color: var(--blue);
+  font-size: 22px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.site-nav-links {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-nav-links a:hover,
+.site-nav-links a[aria-current="page"] {
+  color: var(--blue);
+}
+
+.site-nav-cta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.site-nav-cta:hover { background: var(--blue-dark); }
+
+.site-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--navy-dark);
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+/* Mobile drawer */
+.site-mobile-drawer {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-bottom: 1px solid rgba(26, 79, 160, 0.1);
+  padding: 0.5rem 1.25rem 1.25rem;
+}
+
+.site-mobile-drawer.open { display: flex; }
+
+.site-mobile-drawer a {
+  padding: 0.85rem 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 79, 160, 0.08);
+}
+
+.site-mobile-drawer a:last-child { border-bottom: none; }
+
+.site-mobile-drawer .site-nav-cta {
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+@media (max-width: 780px) {
+  .site-nav-links { display: none; }
+  .site-nav .site-nav-cta { display: none; }
+  .site-menu-btn { display: block; }
+}
+
+/* ============ SITE FOOTER ============ */
+.site-footer {
+  background: var(--navy-dark);
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 0;
+}
+
+.site-footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .site-footer-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+}
+
+.site-footer-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-footer-brand i { color: #7ab3f0; }
+
+.site-footer p.tag {
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.site-footer h4 {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.9rem;
+  font-weight: 500;
+}
+
+.site-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.site-footer-links a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.site-footer-links a:hover { color: #fff; }
+
+.site-footer-links a i { margin-right: 6px; color: #7ab3f0; }
+
+.site-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.1rem 1.25rem;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.35);
+}
