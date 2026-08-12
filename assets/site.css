@@ -64,6 +64,12 @@ a { color: inherit; }
   font-size: 22px;
 }
 
+.site-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
