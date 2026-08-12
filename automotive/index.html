@@ -12,14 +12,14 @@
 <meta property="og:url" content="https://capsonkeytech.com/automotive/">
 <meta property="og:title" content="Automotive Locksmith Services | Capson Key Tech">
 <meta property="og:description" content="Car key replacement, transponder programming, ignition repair, and lockouts for most makes and models. Mobile automotive locksmith across Eastern Idaho.">
-<meta property="og:image" content="https://capsonkeytech.com/assets/logo.png">
-<meta property="og:image:width" content="2400">
-<meta property="og:image:height" content="900">
-<meta property="og:image:alt" content="Capson Key Tech logo">
+<meta property="og:image" content="https://capsonkeytech.com/assets/photos/og-automotive.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Transponder keys and remote head keys for a range of vehicle makes">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Automotive Locksmith Services | Capson Key Tech">
 <meta name="twitter:description" content="Car key replacement, transponder programming, ignition repair, and lockouts for most makes and models. Mobile automotive locksmith across Eastern Idaho.">
-<meta name="twitter:image" content="https://capsonkeytech.com/assets/logo.png">
+<meta name="twitter:image" content="https://capsonkeytech.com/assets/photos/og-automotive.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -64,6 +64,14 @@
   "@type": "Service",
   "serviceType": "Automotive Locksmith Services",
   "url": "https://capsonkeytech.com/automotive/",
+  "image": [
+    "https://capsonkeytech.com/assets/photos/car-keys-and-fobs.jpg",
+    "https://capsonkeytech.com/assets/photos/smart-key-tester.jpg",
+    "https://capsonkeytech.com/assets/photos/ford-ids-diagnostics.jpg",
+    "https://capsonkeytech.com/assets/photos/spare-key-cut.jpg",
+    "https://capsonkeytech.com/assets/photos/module-reprogramming.jpg",
+    "https://capsonkeytech.com/assets/photos/eeprom-bench-work.jpg"
+  ],
   "areaServed": {
     "@type": "AdministrativeArea",
     "name": "Eastern Idaho"
@@ -299,6 +307,34 @@
     text-decoration: none;
     display: inline-block;
   }
+
+  /* WORK GALLERY */
+  .ak-work { margin-bottom: 3rem; }
+  .ak-work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .ak-work figure {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(26,79,160,0.13);
+    display: flex;
+    flex-direction: column;
+  }
+  .ak-work img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  .ak-work figcaption {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #5a6a7a;
+    padding: 11px 14px 13px;
+  }
+  @media (max-width: 860px) { .ak-work-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .ak-work-grid { grid-template-columns: 1fr; } }
 </style>
 
 <div class="ak">
@@ -360,6 +396,44 @@
         <h3>Push-to-start systems</h3>
         <p>Lost your proximity key? We program new smart keys for keyless ignition systems on most vehicles.</p>
       </div>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <p class="ak-eye">On the job</p>
+  <h2 class="ak-title">Real work, real vehicles</h2>
+  <div class="ak-work">
+    <div class="ak-work-grid">
+      <figure>
+        <img src="/assets/photos/car-keys-and-fobs.jpg" width="1000" height="459" loading="lazy" decoding="async"
+             alt="Transponder keys and remote head keys laid out for Ford, Honda, Toyota, Chrysler and Lexus vehicles">
+        <figcaption>Transponder keys and remote head keys we cut and program for most makes.</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/photos/smart-key-tester.jpg" width="1000" height="1000" loading="lazy" decoding="async"
+             alt="Proximity smart key system tester reading a key fob's frequency inside a vehicle cab">
+        <figcaption>Testing a proximity smart key before programming a replacement.</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/photos/ford-ids-diagnostics.jpg" width="750" height="1000" loading="lazy" decoding="async"
+             alt="Laptop running Ford factory diagnostic software connected to a truck by a VCM II interface">
+        <figcaption>Running factory-level Ford diagnostics to read module fault codes.</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/photos/spare-key-cut.jpg" width="562" height="1000" loading="lazy" decoding="async"
+             alt="Two Honda keys held in hand next to a dealer tag for a 2013 Honda CR-V">
+        <figcaption>A spare key cut and programmed for a Honda CR-V.</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/photos/module-reprogramming.jpg" width="1000" height="995" loading="lazy" decoding="async"
+             alt="Control module removed from a Ford truck and connected to a laptop for reprogramming">
+        <figcaption>Reprogramming a control module on a Ford truck.</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/photos/eeprom-bench-work.jpg" width="750" height="1000" loading="lazy" decoding="async"
+             alt="Close-up of a vehicle module circuit board clamped for direct EEPROM chip reading">
+        <figcaption>Bench work — reading an EEPROM chip directly from a module board.</figcaption>
+      </figure>
     </div>
   </div>
 
