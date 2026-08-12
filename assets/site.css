@@ -153,10 +153,12 @@ a { color: inherit; }
   justify-content: center;
 }
 
-/* Raised from 780px to 900px: the 80px logo (213px wide) plus the
-   619px nav no longer fit below ~896px, so the drawer has to take
-   over sooner or the header overflows horizontally. */
-@media (max-width: 900px) {
+/* Raised 780px -> 900px -> 1000px. The 80px logo is 213px wide and the
+   nav grew to 712px when the sixth item ("For Shops") was added, so the
+   header needs ~990px to fit. Below that the drawer has to take over or
+   the page scrolls sideways. Re-measure this if you add another nav item
+   or resize the logo — the three numbers are coupled. */
+@media (max-width: 1000px) {
   .site-nav-links { display: none; }
   .site-nav .site-nav-cta { display: none; }
   .site-menu-btn { display: block; }
