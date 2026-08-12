@@ -42,7 +42,7 @@ a { color: inherit; }
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1.25rem;
-  height: 68px;
+  height: 104px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,7 +65,7 @@ a { color: inherit; }
 }
 
 .site-logo-img {
-  height: 40px;
+  height: 80px;
   width: auto;
   display: block;
 }
@@ -153,7 +153,10 @@ a { color: inherit; }
   justify-content: center;
 }
 
-@media (max-width: 780px) {
+/* Raised from 780px to 900px: the 80px logo (213px wide) plus the
+   619px nav no longer fit below ~896px, so the drawer has to take
+   over sooner or the header overflows horizontally. */
+@media (max-width: 900px) {
   .site-nav-links { display: none; }
   .site-nav .site-nav-cta { display: none; }
   .site-menu-btn { display: block; }
