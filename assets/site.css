@@ -153,12 +153,12 @@ a { color: inherit; }
   justify-content: center;
 }
 
-/* Raised 780px -> 900px -> 1000px. The 80px logo is 213px wide and the
-   nav grew to 712px when the sixth item ("For Shops") was added, so the
-   header needs ~990px to fit. Below that the drawer has to take over or
-   the page scrolls sideways. Re-measure this if you add another nav item
-   or resize the logo — the three numbers are coupled. */
-@media (max-width: 1000px) {
+/* 780px -> 900px -> 1000px -> back to 900px. The 80px logo is 213px wide.
+   With five nav items the nav is 619px, so the header needs ~896px; the
+   sixth item ("For Shops") pushed it to 712px/~990px, and that page was
+   later merged into /automotive/#trade so we're back to five.
+   Re-measure if you add a nav item or resize the logo — these are coupled. */
+@media (max-width: 900px) {
   .site-nav-links { display: none; }
   .site-nav .site-nav-cta { display: none; }
   .site-menu-btn { display: block; }
